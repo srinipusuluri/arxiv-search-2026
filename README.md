@@ -34,12 +34,14 @@ Change the port with `PORT=9000 python3 serve.py`.
 
 ## Features
 
-- **62 topic chips**, sorted A–Z, covering LLMs, RAG, agents, evaluation, AI security and governance. `LLM`, `RAG` and `MCP` are preselected on load.
+- **79 topic chips**, sorted A–Z, spanning two tracks: applied AI (LLMs, RAG, agents, evaluation, AI security
+  and governance) and quantum (quantum machine learning, variational circuits, error correction, annealing,
+  NISQ, post-quantum cryptography). `LLM`, `RAG` and `MCP` are preselected on load.
 - **Phrase-aware search.** Commas separate terms, so `Large Language Models` stays one phrase instead of three unrelated words.
 - **Server-side date filtering** via a `submittedDate:[…]` range in the query, rather than over-fetching and discarding client-side.
 - **Relevance scoring** that weights a title hit above an abstract hit above a category hit, blended with a freshness curve. Matched terms are shown as chips on each card.
 - **Real PDF links.** Every card links to `arxiv.org/abs/…` and `arxiv.org/pdf/…`, using the versioned arXiv id (`2609.01046v1`) that arxiv.org resolves.
-- Filter by category and date window, sort by relevance or date, expand abstracts inline.
+- Filter by **category** — including `quant-ph` alongside the `cs.*` categories — and by date window; sort by relevance or date, expand abstracts inline.
 - Vibrant glass-and-aurora UI that fully respects `prefers-reduced-motion`.
 
 ## How search is built
